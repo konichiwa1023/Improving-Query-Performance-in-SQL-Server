@@ -1,0 +1,19 @@
+-- First attempt, contains errors and inconsistent formatting
+/*
+select PlayerName, p.Country, sum(ps.TotalPoints) 
+AS TotalPoints  
+FROM PlayerStats ps inner join Players p On ps.PlayerName = p.PlayerName
+WHERE p.Country = 'New Zeeland' 
+GROUP BY p.PlayerName, p.Country
+order by Country;
+*/
+
+-- Second attempt - errors corrected and formatting fixed
+
+SELECT p.PlayerName, p.Country,
+		SUM(ps.TotalPoints) AS TotalPoints  
+FROM PlayerStats ps 
+INNER JOIN Players p
+	ON ps.PlayerName = p.PlayerName
+WHERE p.Country = 'New Zealand'
+GROUP BY p.PlayerName, p.Country;
