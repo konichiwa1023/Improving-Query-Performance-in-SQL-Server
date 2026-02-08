@@ -1,0 +1,5 @@
+select PlayerName, Country,
+round(Weight_kg/SQUARE(Height_cm/100),2) BMI
+from Players Where Country = 'USA'
+Or Country = 'Canada'
+order by BMI;
