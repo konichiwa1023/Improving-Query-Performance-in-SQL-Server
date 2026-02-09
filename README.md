@@ -1,0 +1,1 @@
+A mission critical assignment is depending on your SQL coding skills. You’ve been given some code to fix.  It is giving the results you need but it’s running too slow, and it’s poorly formatted making it hard to read.  The deadline is tomorrow.  You’ll need to reformat the code and try different methods to improve performance.
