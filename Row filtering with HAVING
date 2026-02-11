@@ -1,0 +1,5 @@
+
+SELECT Country, COUNT(*) CountOfPlayers
+FROM Players
+WHERE Country IN ('Argentina', 'Brazil', 'Dominican Republic', 'Puerto Rico')
+GROUP BY Country;
