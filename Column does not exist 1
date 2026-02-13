@@ -1,0 +1,8 @@
+-- First query
+
+SELECT PlayerName, 
+    Team, 
+    Position,
+    (DRebound+ORebound)/CAST(GamesPlayed AS numeric) AS AvgRebounds
+FROM PlayerStats
+WHERE (DRebound+ORebound)/CAST(GamesPlayed AS numeric) >= 12;
