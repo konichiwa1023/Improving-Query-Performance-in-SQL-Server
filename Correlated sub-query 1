@@ -1,0 +1,8 @@
+SELECT UNContinentRegion,
+       CountryName, 
+       (SELECT AVG(Magnitude)   -- Add average magnitude
+        FROM Earthquakes e 
+        WHERE n.Code2 = e.Country) AS AverageMagnitude -- Add country code reference
+FROM Nations n
+ORDER BY UNContinentRegion DESC, 
+         AverageMagnitude DESC;
