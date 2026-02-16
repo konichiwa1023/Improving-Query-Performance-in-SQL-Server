@@ -1,0 +1,7 @@
+SELECT Capital
+FROM Nations   -- Table with capital cities
+
+INTERSECT      -- Compare the two queries
+
+SELECT NearestPop   -- City name column from Earthquakes
+FROM Earthquakes;
