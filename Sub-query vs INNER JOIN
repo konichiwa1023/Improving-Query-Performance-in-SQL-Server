@@ -1,0 +1,6 @@
+SELECT
+	n.CountryName,
+	(SELECT MAX(c.Pop2017) -- Consider adding this column
+	FROM Cities AS c 
+	WHERE c.CountryCode = n.Code2) AS BiggestCity -- Ensure this link is correct
+FROM Nations AS n; -- Don't forget to include the outer query table
