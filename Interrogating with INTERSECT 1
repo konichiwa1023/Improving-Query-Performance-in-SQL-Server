@@ -1,0 +1,7 @@
+SELECT CountryName 
+FROM Nations -- Make sure this table is from the Earthquakes database
+
+INTERSECT
+
+SELECT Country
+FROM Players; -- Ensure this table is from the NBA Season 2017-2018 database
