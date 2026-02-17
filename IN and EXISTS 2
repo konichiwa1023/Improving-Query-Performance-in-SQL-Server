@@ -1,0 +1,10 @@
+SELECT CountryName,   
+       Capital,
+       Pop2016,        -- 2016 country population
+       WorldBankRegion
+FROM Nations AS n
+WHERE EXISTS (
+        SELECT 1
+        FROM Earthquakes AS e
+        WHERE n.Capital = e.NearestPop   -- Columns being compared
+);
