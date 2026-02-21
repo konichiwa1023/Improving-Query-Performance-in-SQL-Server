@@ -1,0 +1,5 @@
+-- Query 1
+SELECT *
+FROM Cities
+WHERE CountryCode = 'RU'      -- Country code for Russia
+        OR CountryCode = 'CN' -- Country code for China
